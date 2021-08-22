@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh '''echo \'Hello World\'
         
-        rm -rvf time-tracker
+rm -rf time-tracker
 
 git clone https://github.com/Tinesh379/time-tracker.git
 
