@@ -8,8 +8,20 @@ pipeline {
     }
 
     stage('Test') {
-      steps {
-        sh 'echo \'Unit testing is Complete\''
+      parallel {
+        stage('Test') {
+          steps {
+            sh 'echo \'Unit testing is Complete\''
+          }
+        }
+
+        stage('Tools') {
+          steps {
+            sh '''echo \'$JAVA_HOME\'
+echo \'$MAVEN_HOME\''''
+          }
+        }
+
       }
     }
 
