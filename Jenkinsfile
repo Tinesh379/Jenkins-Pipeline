@@ -28,8 +28,8 @@ echo \'CD : IBM UrbanCode Deploy\''''
 
     stage('Deploy') {
       steps {
-        echo 'deployed in production environment'
         input(message: 'do you want to Deploy ?', id: 'approve/reject')
+        echo 'deployed in production environment'
       }
     }
 
