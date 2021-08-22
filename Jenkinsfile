@@ -7,6 +7,8 @@ pipeline {
 
 git clone https://github.com/Tinesh379/time-tracker.git
 
+cd time-tracker
+
 mvn clean package
 '''
       }
