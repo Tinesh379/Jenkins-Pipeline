@@ -17,8 +17,9 @@ pipeline {
 
         stage('Tools') {
           steps {
-            sh '''echo \'$JAVA_HOME\'
-echo \'$MAVEN_HOME\''''
+            sh '''echo \'Build Tool : MAVEN\'
+echo \'Automated Tests: SELENIUM\'
+echo \'CD : IBM UrbanCode Deploy\''''
           }
         }
 
