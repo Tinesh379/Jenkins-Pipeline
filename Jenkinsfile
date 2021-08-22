@@ -4,6 +4,8 @@ pipeline {
     stage('Build') {
       steps {
         sh '''echo \'Hello World\'
+        
+        rm -rvf time-tracker
 
 git clone https://github.com/Tinesh379/time-tracker.git
 
