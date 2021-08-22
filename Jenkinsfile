@@ -3,7 +3,12 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'echo \'Hello World\''
+        sh '''echo \'Hello World\'
+
+git clone https://github.com/Tinesh379/time-tracker.git
+
+mvn clean package
+'''
       }
     }
 
