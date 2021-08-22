@@ -3,10 +3,11 @@ pipeline {
   stages {
     stage('Build') {
       steps {
+        
+        sh 'rm -rf time-tracker'
+        
         sh '''echo \'Hello World\'
         
-rm -rf time-tracker
-
 git clone https://github.com/Tinesh379/time-tracker.git
 
 cd time-tracker
