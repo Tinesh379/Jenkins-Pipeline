@@ -23,6 +23,12 @@ echo \'CD : IBM UrbanCode Deploy\''''
           }
         }
 
+        stage('sonarqube analysis') {
+          steps {
+            echo 'perform code security analysis'
+          }
+        }
+
       }
     }
 
