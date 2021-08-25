@@ -11,6 +11,7 @@ cd time-tracker
 
 mvn clean package
 '''
+        sh 'rm -rf time-tracker'
       }
     }
 
@@ -40,7 +41,6 @@ echo \'CD : IBM UrbanCode Deploy\''''
     }
 
     stage('Deploy') {
-      
       steps {
         input(message: 'do you want to Deploy ?', id: 'approve/reject')
         echo 'deployed in production environment'
