@@ -40,9 +40,7 @@ echo \'CD : IBM UrbanCode Deploy\''''
     }
 
     stage('Deploy') {
-      when{
-        branch 'master'
-      }
+      
       steps {
         input(message: 'do you want to Deploy ?', id: 'approve/reject')
         echo 'deployed in production environment'
