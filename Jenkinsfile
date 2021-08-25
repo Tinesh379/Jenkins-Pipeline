@@ -3,9 +3,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-               
         sh '''echo \'Hello World\'
-           
+
 git clone https://github.com/Tinesh379/time-tracker.git
 
 cd time-tracker
@@ -41,8 +40,8 @@ echo \'CD : IBM UrbanCode Deploy\''''
     }
 
     stage('Deploy') {
-      //when{
-        //branch 'master'
+      when{
+        branch 'master'
       }
       steps {
         input(message: 'do you want to Deploy ?', id: 'approve/reject')
