@@ -5,7 +5,7 @@ pipeline{
     stages{
         stage('Git Repo'){
             steps{
-                sh 'git Pclone "https://github.com/Tinesh379/time-tracker.git"'
+                sh 'git clone "https://github.com/Tinesh379/time-tracker.git"'
             }
         }
         stage('Build'){
