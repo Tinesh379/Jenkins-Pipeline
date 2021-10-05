@@ -14,31 +14,31 @@ pipeline{
         }
         stage('Maven Build'){
             steps{
-                sh"echo'downloading dependencies'"
-                sh"echo'compiling resources'"
-                sh"echo'build app now'"
-                sh"echo'Build has been completed'"
+                sh"echo 'downloading dependencies'"
+                sh"echo 'compiling resources'"
+                sh"echo 'build app now'"
+                sh"echo 'Build has been completed'"
             }
         }
         stage('Junit'){
             steps{
-                sh"echo'completed junit'"
-                sh"echo'all test cases passed'"
+                sh"echo 'completed junit'"
+                sh"echo' all test cases passed'"
             }
         }
         stage('sonarqube analysis'){
             steps{
-                sh"echo'completed analysis and found no issues'"
+                sh"echo 'completed analysis and found no issues'"
             }
         }
         stage('veracode scan'){
             steps{
-                sh"echo'completed security scan ando found no vulnerabilities'"
+                sh"echo 'completed security scan ando found no vulnerabilities'"
             }
         }
         stage('Deploy to web container'){
             steps{
-                sh"echo'deployed to Tomcat Dev environment"
+                sh"echo 'deployed to Tomcat Dev environment"
             }
         }
         
