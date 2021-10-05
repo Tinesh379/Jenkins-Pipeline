@@ -11,7 +11,7 @@ pipeline{
         stage('Build'){
             steps{
                 sh "echo '${WORKSPACE}'" 
-                sh "cd ./Hello-World"
+                cd Hello-World'
                 sh "ls -altr"
                 sh 'mvn clean package'
             }
