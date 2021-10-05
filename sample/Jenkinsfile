@@ -3,12 +3,12 @@ pipeline{
     stages{
         stage('scm checkout'){
             steps{
-                sh 'echo 'pulled the code from scm''
+                sh'echo 'pulled the code from scm''
             }
         }
         stage('load properties file'){
             steps{
-                sh 'echo 'loaded properties file''
+                sh'echo 'loaded properties file''
             }
 
         }
