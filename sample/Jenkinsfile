@@ -14,6 +14,7 @@ pipeline{
         }
         stage('Maven Build'){
             steps{
+            
                 sh"echo'downloading dependencies'"
                 sh"echo'compiling resources'"
                 sh"echo'build app now'"

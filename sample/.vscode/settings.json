@@ -1,0 +1,7 @@
+{
+    "jenkins.pipeline.linter.connector.crumbUrl": "http://localhost:8080/jenkins/",
+    "jenkins.pipeline.linter.connector.pass": "Jenkins@379",
+    "jenkins.pipeline.linter.connector.url": "http://localhost:8080/jenkins/pipeline-model-converter/validate",
+    "jenkins.pipeline.linter.connector.user": "KA20127074",
+    "jenkins.pipeline.linter.connector.token": " vscode://vscode.github-authentication/did-authenticate?windowid=1&code=0958215e41cbb1b1049b&state=1b85982e-362a-4597-a0ea-299e4e4b38a7 "
+}

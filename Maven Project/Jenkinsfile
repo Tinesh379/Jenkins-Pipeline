@@ -1,0 +1,19 @@
+pipeline{
+
+    agent {node {label 'buildfarm'}}
+
+    stages{
+        stage('Git Repo'){
+            steps{
+                sh 'git clone "https://github.com/Tinesh379/time-tracker.git"'
+            }
+        }
+        stage('Build'){
+            steps{
+               sh 'cd ${workspace}/time-tracker'
+                sh 'mvn clean package'
+            }
+        }
+               
+    }
+}
