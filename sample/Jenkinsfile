@@ -1,0 +1,18 @@
+pipeline{
+    agent{ node { label 'buildfarm'}}
+    stages{
+        stage('scm checkout'){
+            step{
+                sh 'echo 'pulled the code from scm''
+            }
+        }
+        stage('load properties file'){
+            step{
+                sh 'echo 'loaded properties file''
+            }
+
+        }
+        
+    }
+
+}
