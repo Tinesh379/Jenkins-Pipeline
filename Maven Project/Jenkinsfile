@@ -5,7 +5,7 @@ pipeline{
     stages{
         stage('Git Repo'){
             steps{
-                sh 'git clone "https://github.com/Tinesh379/time-tracker.git"'
+                sh 'git Pclone "https://github.com/Tinesh379/time-tracker.git"'
             }
         }
         stage('Build'){
@@ -14,13 +14,10 @@ pipeline{
                 sh 'mvn clean package'
             }
         }
-               
     }
     post{
         always{
-        cleanWs()
+            cleanWs()
         }
-    }
-    
     }
 }
