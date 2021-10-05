@@ -10,8 +10,8 @@ pipeline{
         }
         stage('Build'){
             steps{
-               sh 'cd ${workspace}/maven-pipeline/time-tracker'
-                sh 'mvn clean package'
+                sh "echo '${WORKSPACE}'" 
+                //sh 'mvn clean package'
             }
         }
     }
