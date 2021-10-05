@@ -23,7 +23,7 @@ pipeline{
         stage('Junit'){
             steps{
                 sh"echo 'completed junit'"
-                sh"echo' all test cases passed'"
+                sh"echo 'all test cases passed'"
             }
         }
         stage('sonarqube analysis'){
