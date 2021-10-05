@@ -38,7 +38,7 @@ pipeline{
         }
         stage('Deploy to web container'){
             steps{
-                sh"echo 'deployed to Tomcat Dev environment"
+                sh"echo 'deployed to Tomcat Dev environment'"
             }
         }
         
