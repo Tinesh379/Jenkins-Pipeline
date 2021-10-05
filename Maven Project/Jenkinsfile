@@ -6,12 +6,12 @@ pipeline{
         stage('Git Repo'){
             steps{
                 sh 'git clone "https://github.com/Tinesh379/Hello-World.git"'
-                           }
+              }
         }
         stage('Build'){
             steps{
                 sh "echo '${WORKSPACE}'" 
-                cd Hello-World
+                sh "cd Hello-World"
                 sh "ls -altr"
                 sh 'mvn clean package'
             }
