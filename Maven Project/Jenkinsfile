@@ -11,7 +11,7 @@ pipeline{
         stage('Build'){
             steps{
                 sh "echo '${WORKSPACE}'" 
-                sh "cd time-tracker"
+                sh "cd ${WORKSPACE}/time-tracker"
                 sh 'mvn clean package'
             }
         }
