@@ -1,7 +1,7 @@
 pipeline{
   agent any
   parameters{
-    string(name: 'user', defaultValue: 'Tinesh', description: 'authored by above user')
+    string(name: 'user', defaultValue: appVersion, description: 'authored by above user')
   }
   
   stages{
