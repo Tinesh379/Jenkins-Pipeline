@@ -12,7 +12,7 @@ pipeline{
     }
     stage('show pom version'){
       steps{
-         echo $appVersion
+        echo ${appVersion}
       }
     }
   }
