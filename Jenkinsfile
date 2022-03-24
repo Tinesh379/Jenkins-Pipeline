@@ -12,9 +12,16 @@ pipeline{
     }
     stage('show pom version'){
       steps{
-        echo "$version"
+         echo $appVersion
       }
     }
   }
 }
+
+def getProjectVersion(){
+  def pom = readFile 'pom.xml'
+  return pom.version
+}
+
+def appVersion = getProjectVersion().toString()
       
