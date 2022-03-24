@@ -1,5 +1,9 @@
 pipeline {
   agent any
+
+  parameters{
+    string( name:"version", defaultValue:'<empty>' description:'enter release version')
+  }
   stages {
     stage('Build') {
       steps {
