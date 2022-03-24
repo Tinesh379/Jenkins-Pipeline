@@ -1,7 +1,7 @@
 pipeline{
   agent any
   parameters{
-    string(name: 'app_version', defaultValue: $appVersion, description: 'authored by above user')
+    string(name: 'app_version', defaultValue:'1.0-alpha-snapshot', description: 'authored by above user')
   }
   
   stages{
