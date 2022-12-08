@@ -1,26 +1,10 @@
 pipeline{
   agent any
-  parameters{
-    string(name: 'app_version', defaultValue:'1.0-alpha-snapshot', description: 'authored by above user')
-  }
-  
   stages{
-    stage('Deploy to Host'){
+    stage('hello'){
       steps{
-      sh ' echo "hello world" '
-      }
-    }
-    stage('show pom version'){
-      steps{
-        getProjectVersion()
+        echo "hello from main"
       }
     }
   }
 }
-
-def getProjectVersion(){
-  def pom = readFile 'pom.xml'
-  return pom.version
-}
-
-      
